@@ -27,18 +27,18 @@ def zeta(n):
     
     return suma
 
-# A medida que n se hace “grande”, ¿zeta(n) se aproxima a pi^2/6?
+# A medida que n se hace “grande”, ¿zeta(n) se aproxima a π^2/6?
 
-# Calculamos un aproximado a pi^2/6
+# Calculamos un aproximado de π^2/6
 import numpy as np
 ValorAprox = (np.pi**2)/6
 
-# Evaluamos zeta(n) en un n pequeño y uno grande y comparamos con el valor esperado de la suma
+# Evaluamos zeta(n) en un n pequeño y uno grande y comparamos con ValorAprox
 
 print(abs(ValorAprox-zeta(9999))) 
 print(abs(ValorAprox-zeta(15)))
 
-# Conclusion: cuando n se hace grande zeta(n) se aproxima mas y mas a pi^2/6
+# Conclusion: cuando n se hace grande zeta(n) se aproxima mas y mas a π^2/6
 
 
 
